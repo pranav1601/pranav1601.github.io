@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+     margin: 0px;   
+}
+body{
+    font-family: 'Comfortaa', cursive;
+}
+.ch{
+    padding-top: 60px;
+    font-size: 20px;
+    text-align: center;
+}
+.ch1{
+    text-align: center;
+    position: absolute;
+}
+.ch4{
+    height: 900px;
+    background-color: aquamarine;
+    padding-top: 100px;
+}
+.ch5{
+    background-color: black;
+    width: 80%;
+    height: 700px;
+    left: 100px;
+    padding-top: 10px;
+    color: azure;
+    top: -50px;
+    position: relative;
+    text-align: center;
+}
+.ch6{
+    left: 380px;
+    
+}
+.ch7{
+    left: 780px;
+}
+.ch8{
+    left: 1150px;
+}
