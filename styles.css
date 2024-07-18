@@ -1,0 +1,315 @@
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #007bff; /* Blue color for the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners for the scrollbar thumb */
+    border: 3px solid #f0f0f0; /* Creates a border effect within the track */
+}
+
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+body {
+    display: flex;
+    justify-content: center; /* Centers the entire content horizontally */
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Using Roboto for a sleek and bold appearance */
+    color: black; /* Setting text color to white */
+    background: white;
+    /* Gradient transitions from black at the edges to red at the center, 
+       with solid red for the central content area */
+    padding: 0; /* Adjust padding as necessary */
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    font-size: 17px;
+}
+
+.wrapper {
+    display: flex;
+    width: 70%; /* This will now effectively be 70% of the viewport width */
+    min-height: 100vh;
+    background-color: white; /* Solid red background for the content area */
+}
+
+header {
+    width: 40%; /* Adjusted width for header */
+    background-color: transparent; /* Ensures the header does not block the underlying gradient */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: sticky;
+    top: 0; /* Ensures header is always visible */
+}
+
+
+header h1 {
+    margin: 0;
+    color: #ff6347; /* Theme color for your name */
+}
+
+header p {
+    margin: 5px 0; /* Small margin for spacing */
+    color: #007BFF; /* Dark grey text for visibility */
+}
+
+header a {
+    color: #007BFF; /* Vibrant blue for links */
+    text-decoration: none; /* No underline */
+    font-weight: bold;
+    padding: 5px; /* Padding for a better button-like appearance */
+    transition: color 0.3s; /* Smooth transition for color change on hover */
+}
+
+header a:hover {
+    color: #ff6347; /* Theme color on hover */
+}
+nav {
+    width: 5%; /* Adjusted width for vertical navbar */ /* Slightly different background to distinguish */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+    position: sticky;
+    top: 0; /* Ensures nav is always visible */
+}
+
+nav ul {
+    list-style-type: none; /* Removes default list styling */
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    width: 100%; /* Ensures each link can fill the nav width */
+    margin-bottom: 10px; /* Space between buttons */
+}
+
+nav ul li a {
+    display: block; /* Makes the link fill the li for easier clicking */
+    padding: 10px;
+    text-align: center; /* Center text */
+    background-color: #ffffff; /* Button background */
+    color: #ff6347; /* Button text color */
+    text-decoration: none; /* No underline */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for 3D effect */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #ff6347; /* Changes background on hover/focus */
+    color: #ffffff; /* Changes text color on hover/focus */
+}
+
+nav ul li a.active {
+    background-color: #ff6347; /* Active state background */
+    color: #ffffff; /* Active state text color */
+}
+
+main {
+    width: 50%; /* Adjusted width for main content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+section {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 100vh; /* Sets the minimum height of each section to be the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically within each section */
+    align-items: center; /* Centers content horizontally */
+    text-align: justify; /* Justifies text within the section */
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+h1 {
+    color: #ff6347;
+    font-size: 2.5em; /* Larger size for main headings */
+}
+
+h2 {
+    color: #ff6347;
+    font-size: 2.0em; /* Larger size for secondary headings */
+}
+
+h3 {
+    color: #007BFF;
+    font-size: 1.75em; /* Slightly larger size for tertiary headings */
+}
+
+header, nav, main, section {
+    font-weight: 400; /* Regular weight for most text */
+}
+
+
+#profile-pic {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid #ff6347; /* Bright red border around the profile picture */
+}
+
+
+.bio-images {
+    width: 80%; /* Adjust width as necessary */
+    display: flex;
+    justify-content: space-between; /* Distributes space evenly between images */
+    flex-wrap: wrap; /* Allows images to wrap on the next line */
+    margin-bottom: 20px; /* Adds space below the image row */
+}
+
+.bio-images img {
+    width: 32%; /* Adjusts width to fit 3 images per line on the first row */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 200px; /* Limits the height to make images appear larger */
+    margin-bottom: 10px; /* Adds a bottom margin to the images */
+}
+
+
+.education-images {
+    width: 100%; /* Adjust width as necessary */
+    display: flex;
+    justify-content: space-between; /* Distributes space evenly between images */
+    flex-wrap: wrap; /* Allows images to wrap on the next line */
+    margin-bottom: 20px; /* Adds space below the image row */
+}
+
+.education-images img {
+    width: 30%; /* Adjusts width to fit 3 images per line */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 200px; /* Limits the height to make images appear larger */
+    margin-bottom: 10px; /* Adds a bottom margin to the images */
+}
+
+#skills p, #education p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#skills ul, #education ul {
+    padding-left: 20px; /* Ensures alignment and readability */
+}
+
+#skills li, #education li {
+    margin-bottom: 10px; /* Adds space between items for better readability */
+    line-height: 1.6; /* Improves readability */
+}
+
+#skills a, #education a {
+    color: #ff6347;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px 6px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#skills a:hover, #education a:hover {
+    background-color: #ff6347;
+    color: #ffffff;
+}
+
+#experience h3 {
+    color: #007BFF; /* Sets the color for subheadings within the experience section */
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#experience p {
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 15px; /* Adds spacing between paragraphs for clarity */
+}
+
+#experience p strong {
+    font-weight: bold; /* Emphasizes key skills and technologies */
+}
+
+.experience-images {
+    width: 100%; /* Adjust width as necessary */
+    display: flex;
+    justify-content: space-around; /* Evenly space images across the container */
+    margin-top: 20px; /* Space above the image container */
+    margin-bottom: 20px; /* Space below the image container */
+}
+
+.experience-images img {
+    width: 30%; /* Adjusts width to fit 3 images per line */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 200px; /* Limits the height to make images appear larger */
+    margin-bottom: 10px; /* Adds a bottom margin to the images */
+}
+
+#projects a {
+    color: #ff6347; /* Red color for links */
+    text-decoration: none; /* No underline */
+    font-weight: bold;
+    padding: 2px 6px;
+    background-color: #ffffff; /* White background for visibility */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for 3D effect */
+    margin: 2px; /* Small margin for spacing between links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+#projects a:hover, #projects a:focus {
+    background-color: #ff6347; /* Background turns red on hover/focus */
+    color: #ffffff; /* Text turns white on hover/focus */
+}
+
+.activity-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.activity-images img {
+    width: 30%; /* Adjusts width to fit 3 images per line */
+    height: auto; /* Maintains aspect ratio */
+    margin-right: 10px; /* Space between images */
+    border-radius: 5px; /* Optional: rounded corners for a softer look */
+}
+
+.activity-images img:last-child {
+    margin-right: 0; /* Removes margin from the last image */
+}
+
+#opensource a {
+    color: #ffffff; /* White text color */
+    background-color: #ff6347; /* Theme color for background */
+    text-decoration: none; /* No underline for a cleaner look */
+    font-weight: bold; /* Bold font for emphasis */
+    padding: 8px 12px; /* Padding for better button appearance */
+    border-radius: 4px; /* Rounded corners for a modern look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for 3D effect */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+#opensource a:hover, #opensource a:focus {
+    background-color: #ffa500; /* Lighter shade on hover/focus for contrast */
+    color: #ffffff; /* Keeps text color white on hover/focus for readability */
+    text-decoration: none; /* Ensures no underline appears on hover/focus */
+}
+
+
