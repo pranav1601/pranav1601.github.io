@@ -11,29 +11,30 @@
 <body>
     <div class="wrapper">
         <header>
-            <img src="profile.jpeg" alt="Pranav Agarwal" id="profile-pic">
+            <img src="profile.png" alt="Pranav Agarwal" id="profile-pic">
             <h1>Pranav Agarwal</h1>
+            <h3> Turning data into insights.</h2>
             <p>📍 Irvine, CA</p>
-            <p>📞 (949) 844-0408</p>
             <p>✉️ <a href="mailto:pranav.agarw@gmail.com">pranav.agarw@gmail.com</a> </p>
             <p><a href="https://github.com/pranav1601" target="_blank"><i class="fab fa-github"></i> github.com/pranav1601</a></p>
             <p><a href="https://linkedin.com/in/hi-pranav" target="_blank"><i class="fab fa-linkedin-in"></i> linkedin.com/hi-pranav</a></p>
-            <p><a href="https://pranav1601.github.io" target="_blank"><i class="fas fa-briefcase"></i> My website</a></p>
+            <p><a href="./resume_pranav_agarwal.pdf" target="_blank"><i class="fas fa-briefcase"></i> My Resume</a></p>
 
         </header>
         <nav>
+            <div id="toggleVisibility" class="arrow-left">⬅️</div>
             <ul>
-                <li><a href="#bio">👤</a></li>
-                <li><a href="#education">🎓</a></li>
-                <li><a href="#skills">🔧</a></li>
-                <li><a href="#opensource">🔗</a></li>
-                <li><a href="#experience">🛠</a></li>
-                <li><a href="#projects">📁</a></li>
-                <li><a href="#extracurricular">🌟</a></li>
+                <li><a href="#bio">👤 <span><strong>About Me</strong> </span></a></li>
+                <li><a href="#education">🎓 <span><strong>Education</strong></span></a></li>
+                <li><a href="#skills">🔧 <span><strong>Skills</strong> </span></a></li>
+                <li><a href="#opensource">🔗 <span><strong>Open Source</strong></span></a></li>
+                <li><a href="#experience">🛠 <span><strong>Experience</strong></span></a></li>
+                <li><a href="#projects">📁 <span><strong>Projects</strong></span></a></li>
+                <li><a href="#extracurricular">🌟 <span><strong>Extracurricular</strong></span></a></li>
             </ul>
         </nav>
         <main>
-            <section id="bio">
+            <section id="bio" class="hidden">
                 <h2>👤 About Me</h2>
                     <p>Hello! I'm Pranav Agarwal, a relentless pursuer of knowledge and innovation within the realm of technology. My journey began in the lively streets of India, where, as a young boy, I was fascinated by the magic of computers. This fascination was kindled by spirited competitions in car racing games with my elder brother, sparking a lifelong passion for technology that continues to drive me forward.</p>
 
@@ -56,7 +57,7 @@
                     <img src="bio_image_6.jpg" alt="Description of Image 5">
                 </div>
             </section>
-            <section id="education">
+            <section id="education" class="hidden">
                 <h2>🎓 Education</h2>
                 <h3>Bachelor of Technology in Computer Science</h3>
                 <p>I completed my Bachelor of Technology in Computer Science and Engineering at Vellore Institute of Technology (VIT), India. My academic journey here was marked by a deep engagement with core subjects like data structures, database management, and natural language processing. As an active member of ACM-VIT, I contributed to several projects, notably one focused on the automatic segregation of wet and dry waste using computer vision. This practical application of classroom learning fueled my interest in real-world technological solutions and prepared me for advanced studies.</p>
@@ -72,7 +73,7 @@
                     <img src="uci_image_3.jpg" alt="UCI Graduation Day">
                 </div>
             </section>
-            <section id="skills">
+            <section id="skills" class="hidden">
                 <h2>🔧 Skills & Certifications</h2>
                 <p>Throughout my academic and professional journey, I have cultivated a diverse and robust skill set that spans various aspects of technology and data science:</p>
                 <ul>
@@ -92,7 +93,7 @@
                     <li><strong>Applied Machine Learning:</strong> Certified by the University of Michigan on Coursera, focusing on practical machine learning implementation.<br> <a href="https://www.coursera.org/account/accomplishments/verify/XMPY35QAYBNR" target="_blank">View Certificate</a></li>
                 </ul>
             </section>
-            <section id="opensource">
+            <section id="opensource" class="hidden">
                 <h2>🔗 Open Source Contributions</h2>
                 
                 <h3>Mozilla</h3>
@@ -108,9 +109,17 @@
                 <p><a href="https://github.com/OpnTec" target="_blank">GitHub</a></p>
             </section>
             
-            <section id="experience">
+            <section id="experience" class="hidden">
                 <h2>🛠 Experience</h2>
                 
+                <h3>Machine Learning Infrastructure Intern | Safran</h3>
+                <p><strong>July 2024 - Present</strong></p>
+                <p>Engaged in the <strong>design and development</strong> of cloud-based data applications, focusing on <strong>machine learning models</strong> for predictive health management systems in aerospace equipment. Contributed significantly to the transition from proofs-of-concept to functional prototypes.</p>
+                <p>Engineered and integrated software solutions to enhance prototype systems, verifying their functional performance and optimizing predictive algorithms to forecast equipment health within an IoT framework. My role involved leveraging my skills in <strong>cloud computing</strong>, <strong>machine learning</strong>, and <strong>IoT integration</strong> to create robust, real-time monitoring solutions.</p>
+                <p>Collaborated within a dynamic, cross-functional team to seamlessly merge various technologies, ensuring the robust deployment of cloud-hosted machine learning solutions tailored for real-time health monitoring in the aerospace sector.</p>
+                <p><strong>Key Skills:</strong> Cloud Computing, Machine Learning, IoT Integration, Cross-functional Collaboration.</p>
+
+
                 <h3>Machine Learning Research Assistant | University of California, Irvine</h3>
                 <p><strong>July 2024 - Present</strong></p>
                 <p>In the cutting-edge AI Center at UCI, my primary role involved spearheading comprehensive evaluations of <strong>patch-level and whole-slide models</strong>, utilizing sophisticated machine learning algorithms to predict survival rates in clinical trials. My work with datasets from TCGA, CPTAC, and private cohorts led to significant enhancements in model accuracy and reliability, impacting patient outcomes and treatment plans.</p>
@@ -149,7 +158,7 @@
                 <p>Furthermore, I orchestrated the design and initial coding of a critical feature for PlayShifu's flagship iOS product. This key development was instrumental in driving the product's annual sales to reach <strong>$10 million</strong>. My efforts involved extensive use of <strong>Unity</strong> for optimizing performance, ensuring seamless gameplay experiences on less powerful devices. These optimizations broadened the user base by 16%, making high-quality AR experiences accessible to a wider audience.</p>
                 <p><strong>Key Skills:</strong> Augmented Reality, Unity, iOS Development, Performance Optimization, Software Development.</p>
             </section>
-            <section id="projects">
+            <section id="projects" class="hidden">
                 <h2>📁 Projects</h2>
                 
                 <h3>Forest Fire Detection Using Classifiers and Transfer Learning</h3>
@@ -196,7 +205,7 @@
                 <p><a href="https://github.com/pranav1601/weather-application-web-server" target="_blank">GitHub</a></p>
             
             </section>
-            <section id="extracurricular">
+            <section id="extracurricular" class="hidden">
                 <h2>🌟 Extracurricular Activities</h2>
                 
                 <h3>Winner of VITHACK'19</h3>
@@ -255,5 +264,68 @@
     document.querySelectorAll('section').forEach(section => {
         observer.observe(section);
     });
+    const wrapper = document.querySelector('.wrapper');
+    const links = document.querySelectorAll('nav ul li a');
+    const sections = document.querySelectorAll('main section');
+    const header = document.querySelector('header');
+    const main = document.querySelector('main');
+    const toggleVisibility = document.getElementById('toggleVisibility');
+    const navTexts = document.querySelectorAll('nav ul li a span'); // Select all nav text spans
+
+    function updateLayout() {
+        const allHidden = Array.from(sections).every(sec => sec.classList.contains('hidden'));
+        if (allHidden) {
+            header.style.width = '90%'; // Hide main content by setting width to 0
+            main.style.width = '0%';
+            toggleVisibility.classList.remove('visible');
+            navTexts.forEach(text => text.style.display = 'block');
+            sections.forEach(section => section.classList.remove('visible'));
+            links.forEach(link => link.classList.add('wiggle'));
+        } else {
+            header.style.width = '40%'; // Set main content width to 50%
+            main.style.width = '50%';
+            toggleVisibility.classList.add('visible');
+            navTexts.forEach(text => text.style.display = 'none');
+            // links.forEach(link => link.classList.remove('wiggle'));
+        }
+    }
+
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            // e.preventDefault();
+            const sectionId = this.getAttribute('href').substring(1);
+            const section = document.getElementById(sectionId);
+
+            // Hide all sections
+            sections.forEach(sec => {
+                sec.classList.add('hidden');
+            });
+
+            // Show the clicked section
+            sections.forEach(sec => {
+                sec.classList.remove('hidden');
+            });
+            // setTimeout(() => { section.classList.add('visible'); }, 10);
+            // Adjust layout and scroll into view
+            updateLayout();
+            setTimeout(() => {
+                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 0);
+        });
+    });
+    toggleVisibility.addEventListener('click', function() {
+        sections.forEach(sec => {
+            sec.classList.add('hidden');
+            // sec.classList.remove('visible');
+        });
+        links.forEach(link => {
+                        link.classList.remove('active');
+                });
+        updateLayout();
+    });
+
+    // Initial layout check on load
+    updateLayout();
 });
+
     </script>

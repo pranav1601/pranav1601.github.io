@@ -18,8 +18,7 @@ body {
     display: flex;
     justify-content: center; /* Centers the entire content horizontally */
     min-height: 100vh;
-    margin: 0;
-    font-family: 'Roboto', sans-serif; /* Using Roboto for a sleek and bold appearance */
+    margin: 0; /* Using Roboto for a sleek and bold appearance */
     color: black; /* Setting text color to white */
     background: white;
     /* Gradient transitions from black at the edges to red at the center, 
@@ -37,10 +36,6 @@ body {
 }
 
 header {
-    width: 40%; /* Adjusted width for header */
-    background-color: transparent; /* Ensures the header does not block the underlying gradient */
-    padding: 20px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,8 +43,8 @@ header {
     height: 100vh;
     position: sticky;
     top: 0; /* Ensures header is always visible */
+    transition: width 0.5s ease-in-out;
 }
-
 
 header h1 {
     margin: 0;
@@ -62,6 +57,7 @@ header p {
 }
 
 header a {
+    width: 90%;
     color: #007BFF; /* Vibrant blue for links */
     text-decoration: none; /* No underline */
     font-weight: bold;
@@ -86,12 +82,13 @@ nav {
 nav ul {
     list-style-type: none; /* Removes default list styling */
     padding: 0;
-    width: 100%;
+    
 }
 
 nav ul li {
     width: 100%; /* Ensures each link can fill the nav width */
     margin-bottom: 10px; /* Space between buttons */
+    border-color: #ff6347;
 }
 
 nav ul li a {
@@ -102,8 +99,11 @@ nav ul li a {
     color: #ff6347; /* Button text color */
     text-decoration: none; /* No underline */
     border-radius: 4px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for 3D effect */
+    box-shadow: 0 2px 4px #ff6347; /* Subtle shadow for 3D effect */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    /* Added transform origin to ensure rotation happens around the center */
+    transform-origin: center;
+   
 }
 
 nav ul li a:hover, nav ul li a:focus {
@@ -126,6 +126,7 @@ main {
 
 section {
     padding: 20px;
+    padding-right: 10px;
     width: 100%;
     box-sizing: border-box;
     min-height: 100vh; /* Sets the minimum height of each section to be the full viewport height */
@@ -135,6 +136,8 @@ section {
     align-items: center; /* Centers content horizontally */
     text-align: justify; /* Justifies text within the section */
 }
+
+
 
 h1, h2, h3 {
     font-weight: bold;
@@ -161,9 +164,9 @@ header, nav, main, section {
 
 
 #profile-pic {
-    width: 100px;
+    width: 150px;
     height: auto;
-    border-radius: 50%;
+    border-radius:75%;
     margin-right: 20px;
     border: 3px solid #ff6347; /* Bright red border around the profile picture */
 }
@@ -178,7 +181,7 @@ header, nav, main, section {
 }
 
 .bio-images img {
-    width: 32%; /* Adjusts width to fit 3 images per line on the first row */
+    width: auto; /* Adjusts width to fit 3 images per line on the first row */
     height: auto; /* Maintains aspect ratio */
     max-height: 200px; /* Limits the height to make images appear larger */
     margin-bottom: 10px; /* Adds a bottom margin to the images */
@@ -188,13 +191,13 @@ header, nav, main, section {
 .education-images {
     width: 100%; /* Adjust width as necessary */
     display: flex;
-    justify-content: space-between; /* Distributes space evenly between images */
+    justify-content: space-evenly; /* Distributes space evenly between images */
     flex-wrap: wrap; /* Allows images to wrap on the next line */
     margin-bottom: 20px; /* Adds space below the image row */
 }
 
 .education-images img {
-    width: 30%; /* Adjusts width to fit 3 images per line */
+    width: auto; /* Adjusts width to fit 3 images per line */
     height: auto; /* Maintains aspect ratio */
     max-height: 200px; /* Limits the height to make images appear larger */
     margin-bottom: 10px; /* Adds a bottom margin to the images */
@@ -254,7 +257,7 @@ header, nav, main, section {
 }
 
 .experience-images img {
-    width: 30%; /* Adjusts width to fit 3 images per line */
+    width: auto; /* Adjusts width to fit 3 images per line */
     height: auto; /* Maintains aspect ratio */
     max-height: 200px; /* Limits the height to make images appear larger */
     margin-bottom: 10px; /* Adds a bottom margin to the images */
@@ -278,6 +281,7 @@ header, nav, main, section {
 }
 
 .activity-images {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
@@ -291,9 +295,6 @@ header, nav, main, section {
     border-radius: 5px; /* Optional: rounded corners for a softer look */
 }
 
-.activity-images img:last-child {
-    margin-right: 0; /* Removes margin from the last image */
-}
 
 #opensource a {
     color: #ffffff; /* White text color */
@@ -312,4 +313,56 @@ header, nav, main, section {
     text-decoration: none; /* Ensures no underline appears on hover/focus */
 }
 
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(3deg);
+    }
+}
+
+
+
+.wiggle {
+    animation: wiggle 1s ease-in-out infinite; /* Apply the wiggle animation continuously */
+}
+
+nav ul li a:hover {
+animation: wiggle 0.5s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+.arrow-left {
+    font-size: 24px;  /* Font size for visibility */
+    cursor: pointer; /* Indicates the element is clickable */
+    text-align: center;
+    width: 100%; /* Full width to center the arrow */
+    margin-bottom: 20px; /* Adds space below the arrow to separate from the nav list */
+    color: #ff6347; /* Theme color for consistency */
+    padding: 10px; /* Padding for better touch area and visual spacing */
+    background-color: #f0f0f0; /* Light background to stand out */
+    border-radius: 5px; /* Rounded corners for a softer appearance */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    
+    opacity: 0; /* Start hidden */
+    visibility: hidden; /* Not visible initially */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Smooth transitions for opacity and transform */
+    transform: translateY(-20px); /* Start slightly above its normal position */
+}
+
+.arrow-left.visible {
+    opacity: 1; /* Fully visible when active */
+    visibility: visible; /* Make sure it's visible */
+    transform: translateY(0); /* Move to normal position */
+}
+
+.arrow-left:hover {
+    background-color: #e0e0e0; /* Slightly darker on hover for feedback */
+    transform: scale(1.05); /* Slightly larger on hover for emphasis */
+}
 
