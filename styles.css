@@ -4,7 +4,7 @@
 
 
 ::-webkit-scrollbar-thumb {
-    background-color: #007bff; /* Blue color for the scrollbar thumb */
+    background-color: #1995AD; /* Blue color for the scrollbar thumb */
     border-radius: 6px; /* Rounded corners for the scrollbar thumb */
     border: 3px solid #f0f0f0; /* Creates a border effect within the track */
 }
@@ -48,17 +48,17 @@ header {
 
 header h1 {
     margin: 0;
-    color: #ff6347; /* Theme color for your name */
+    color: #002C54; /* Theme color for your name */
 }
 
 header p {
     margin: 5px 0; /* Small margin for spacing */
-    color: #007BFF; /* Dark grey text for visibility */
+    color: #1995AD; /* Dark grey text for visibility */
 }
 
 header a {
     width: 90%;
-    color: #007BFF; /* Vibrant blue for links */
+    color: #1995AD; /* Vibrant blue for links */
     text-decoration: none; /* No underline */
     font-weight: bold;
     padding: 5px; /* Padding for a better button-like appearance */
@@ -66,7 +66,7 @@ header a {
 }
 
 header a:hover {
-    color: #ff6347; /* Theme color on hover */
+    color: #002C54; /* Theme color on hover */
 }
 nav {
     width: 5%; /* Adjusted width for vertical navbar */ /* Slightly different background to distinguish */
@@ -88,7 +88,7 @@ nav ul {
 nav ul li {
     width: 100%; /* Ensures each link can fill the nav width */
     margin-bottom: 10px; /* Space between buttons */
-    border-color: #ff6347;
+    border-color: #002C54;
 }
 
 nav ul li a {
@@ -96,10 +96,10 @@ nav ul li a {
     padding: 10px;
     text-align: center; /* Center text */
     background-color: #ffffff; /* Button background */
-    color: #ff6347; /* Button text color */
+    color: #002C54; /* Button text color */
     text-decoration: none; /* No underline */
     border-radius: 4px; /* Rounded corners */
-    box-shadow: 0 2px 4px #ff6347; /* Subtle shadow for 3D effect */
+    box-shadow: 0 2px 4px #002C54; /* Subtle shadow for 3D effect */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
     /* Added transform origin to ensure rotation happens around the center */
     transform-origin: center;
@@ -107,12 +107,12 @@ nav ul li a {
 }
 
 nav ul li a:hover, nav ul li a:focus {
-    background-color: #ff6347; /* Changes background on hover/focus */
+    background-color: #002C54; /* Changes background on hover/focus */
     color: #ffffff; /* Changes text color on hover/focus */
 }
 
 nav ul li a.active {
-    background-color: #ff6347; /* Active state background */
+    background-color: #002C54; /* Active state background */
     color: #ffffff; /* Active state text color */
 }
 
@@ -144,17 +144,17 @@ h1, h2, h3 {
 }
 
 h1 {
-    color: #ff6347;
+    color: #002C54;
     font-size: 2.5em; /* Larger size for main headings */
 }
 
 h2 {
-    color: #ff6347;
+    color: #002C54;
     font-size: 2.0em; /* Larger size for secondary headings */
 }
 
 h3 {
-    color: #007BFF;
+    color: #1995AD;
     font-size: 1.75em; /* Slightly larger size for tertiary headings */
 }
 
@@ -168,7 +168,7 @@ header, nav, main, section {
     height: auto;
     border-radius:75%;
     margin-right: 20px;
-    border: 3px solid #ff6347; /* Bright red border around the profile picture */
+    border: 3px solid #002C54; /* Bright red border around the profile picture */
 }
 
 
@@ -218,7 +218,7 @@ header, nav, main, section {
 }
 
 #skills a, #education a {
-    color: #ff6347;
+    color: #002C54;
     text-decoration: none;
     font-weight: bold;
     padding: 2px 6px;
@@ -228,12 +228,12 @@ header, nav, main, section {
 }
 
 #skills a:hover, #education a:hover {
-    background-color: #ff6347;
+    background-color: #002C54;
     color: #ffffff;
 }
 
 #experience h3 {
-    color: #007BFF; /* Sets the color for subheadings within the experience section */
+    color: #1995AD; /* Sets the color for subheadings within the experience section */
     margin-top: 20px;
     font-size: 20px;
 }
@@ -264,7 +264,7 @@ header, nav, main, section {
 }
 
 #projects a {
-    color: #ff6347; /* Red color for links */
+    color: #002C54; /* Red color for links */
     text-decoration: none; /* No underline */
     font-weight: bold;
     padding: 2px 6px;
@@ -276,7 +276,7 @@ header, nav, main, section {
 }
 
 #projects a:hover, #projects a:focus {
-    background-color: #ff6347; /* Background turns red on hover/focus */
+    background-color: #002C54; /* Background turns red on hover/focus */
     color: #ffffff; /* Text turns white on hover/focus */
 }
 
@@ -298,7 +298,7 @@ header, nav, main, section {
 
 #opensource a {
     color: #ffffff; /* White text color */
-    background-color: #ff6347; /* Theme color for background */
+    background-color: #002C54; /* Theme color for background */
     text-decoration: none; /* No underline for a cleaner look */
     font-weight: bold; /* Bold font for emphasis */
     padding: 8px 12px; /* Padding for better button appearance */
@@ -343,7 +343,7 @@ animation: wiggle 0.5s ease-in-out;
     text-align: center;
     width: 100%; /* Full width to center the arrow */
     margin-bottom: 20px; /* Adds space below the arrow to separate from the nav list */
-    color: #ff6347; /* Theme color for consistency */
+    color: #002C54; /* Theme color for consistency */
     padding: 10px; /* Padding for better touch area and visual spacing */
     background-color: #f0f0f0; /* Light background to stand out */
     border-radius: 5px; /* Rounded corners for a softer appearance */
