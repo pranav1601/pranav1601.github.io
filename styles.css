@@ -168,7 +168,7 @@ header, nav, main, section {
     height: auto;
     border-radius:75%;
     margin-right: 20px;
-    border: 3px solid #002C54; /* Bright red border around the profile picture */
+    border: 2px solid #002C54; /* Bright red border around the profile picture */
 }
 
 
