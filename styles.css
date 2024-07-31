@@ -366,3 +366,19 @@ animation: wiggle 0.5s ease-in-out;
     transform: scale(1.05); /* Slightly larger on hover for emphasis */
 }
 
+.custom-link {
+    display: inline-block;
+    background-color: #dce2ea; /* Vibrant blue background */
+    color: black; /* White text color */
+    text-decoration: none; /* No underline */
+    border-radius: 2px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for a 3D effect */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.custom-link:hover, .custom-link:focus {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Larger shadow for hover effect */
+    text-decoration: none; /* Ensures no underline appears */
+    color: #ffffff; /* Keeps text color white */
+}
