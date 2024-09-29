@@ -384,20 +384,17 @@ animation: wiggle 0.5s ease-in-out;
 }
 
 @media only screen and (max-width: 1079px) {
-    head {
-        font-size: 70%;
-    }
     body {
-        font-size: 70%;
+        font-size: 45%;
         
     }
-    h1 {
+    /* h1 {
         font-size: 70%
-    }
-    h3 {
-        font-size: 70%
-    }
-    li {
+    }*/
+    /* h3 {
+        font-size: 100%
+    } */
+    /* li {
         font-size: 70%
     }
     a {
@@ -405,9 +402,15 @@ animation: wiggle 0.5s ease-in-out;
     }
     p {
         font-size: 70%
+    }  */
+    p{
+        font-size: 120%;
+    }
+    li{
+        font-size: 110%;
     }
     #profile-pic {
-        width: 30%;
+        width: 40%;
         height:auto
     }
     .education-images img{
@@ -427,7 +430,7 @@ animation: wiggle 0.5s ease-in-out;
         height:auto
     }
     .wiggle{
-        font-size: 70%
+        font-size: 90%
     }
 
 }
