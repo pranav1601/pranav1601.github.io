@@ -433,6 +433,10 @@ animation: wiggle 0.5s ease-in-out;
         width: 50%;
         height:auto
     }
+    .projects-images img{
+        width: 50%;
+        height: auto;
+    }
     .activity-images img{
         width: 50%;
         height:auto
